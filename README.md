@@ -1,2 +1,37 @@
-# AI-Web
-AI Web - Premium free link creator for sites, photos, videos and more. Create shareable links instantly.
+# AI Web 🔗
+
+**Премиум-генератор бесплатных ссылок**
+
+Создавай красивые короткие ссылки на сайты, фото, видео и файлы за секунды.
+
+## Возможности
+
+- 🔗 Ссылки на любые URL (включая GitHub Pages)
+- 📷 Привязка фото и изображений
+- 🎬 Привязка видео
+- 📄 Любые файлы
+- ✨ Кастомные slug'и
+- 🚀 Мгновенная генерация
+- 📱 Полностью адаптивный дизайн
+- 🔐 Регистрация без проверок (демо)
+
+## Демо
+
+Открой сайт: [https://superyaroslav8-arch.github.io/AI-Web/](https://superyaroslav8-arch.github.io/AI-Web/)
+
+## Технологии
+
+- Чистый HTML / CSS / JavaScript
+- Современный тёмный премиум-дизайн
+- LocalStorage для демо-хранения ссылок
+- GitHub Pages ready
+
+## Поддержка
+
+- Email: support@aiweb.app
+- Телефон: +7 (999) 123-45-67
+- Telegram: @aiweb_support
+
+---
+
+Сделано с ❤️ · 2026

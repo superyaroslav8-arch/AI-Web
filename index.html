@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web — Создавай бесплатные ссылки премиум-класса</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">AI</span>
+                <span class="logo-text">Web</span>
+            </a>
+            <nav class="nav">
+                <a href="#features">Возможности</a>
+                <a href="#create">Создать ссылку</a>
+                <a href="#support">Поддержка</a>
+                <button class="btn-ghost" id="openAuth">Войти</button>
+                <button class="btn-primary" id="openRegister">Регистрация</button>
+            </nav>
+            <button class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Возможности</a>
+        <a href="#create">Создать ссылку</a>
+        <a href="#support">Поддержка</a>
+        <button class="btn-ghost" id="openAuthMobile">Войти</button>
+        <button class="btn-primary" id="openRegisterMobile">Регистрация</button>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">🚀 Премиум-класс · Бесплатно навсегда</div>
+            <h1 class="hero-title">
+                Создавай <span class="gradient-text">умные ссылки</span><br>
+                за секунды
+            </h1>
+            <p class="hero-desc">
+                AI Web — твой персональный генератор бесплатных ссылок. 
+                Привязывай сайты, фото, видео и любой контент. 
+                Одна ссылка — бесконечные возможности.
+            </p>
+            <div class="hero-actions">
+                <a href="#create" class="btn-primary btn-lg">Создать ссылку сейчас</a>
+                <a href="#features" class="btn-outline btn-lg">Узнать больше</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num">50K+</span>
+                    <span class="stat-label">ссылок создано</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">12K+</span>
+                    <span class="stat-label">пользователей</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">99.9%</span>
+                    <span class="stat-label">аптайм</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Всё, что нужно <span class="gradient-text">в одном месте</span></h2>
+            <p class="section-desc">Мощный функционал премиум-уровня без ограничений и скрытых платежей</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Любые ссылки</h3>
+                    <p>Сайты, GitHub Pages, файлы, соцсети — создавай короткие красивые ссылки на что угодно.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📷</div>
+                    <h3>Фото и изображения</h3>
+                    <p>Загружай фото — мы мгновенно привяжем их к новой ссылке. Просмотр в один клик.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Видео</h3>
+                    <p>Прикрепляй видеофайлы. Ссылка открывает плеер прямо в браузере — без скачивания.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Мгновенно</h3>
+                    <p>Генерация ссылки занимает меньше секунды. Никаких очередей и ожидания.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Безопасно</h3>
+                    <p>Все данные обрабатываются локально. Мы не храним твои файлы на серверах.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Премиум-дизайн</h3>
+                    <p>Современный интерфейс, анимации и адаптивность на любом устройстве.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Link -->
+    <section class="create" id="create">
+        <div class="container">
+            <h2 class="section-title">Создай свою <span class="gradient-text">ссылку</span></h2>
+            <p class="section-desc">Выбери тип контента, загрузи файл или вставь URL — и получи готовую ссылку</p>
+
+            <div class="create-card">
+                <div class="tabs">
+                    <button class="tab active" data-tab="url">URL / Сайт</button>
+                    <button class="tab" data-tab="photo">Фото</button>
+                    <button class="tab" data-tab="video">Видео</button>
+                    <button class="tab" data-tab="file">Файл</button>
+                </div>
+
+                <div class="tab-content active" id="tab-url">
+                    <label>Вставь ссылку на сайт или ресурс</label>
+                    <input type="url" id="urlInput" placeholder="https://example.com или github.com/..." class="input">
+                </div>
+
+                <div class="tab-content" id="tab-photo">
+                    <label>Загрузи изображение</label>
+                    <div class="upload-zone" id="photoZone">
+                        <input type="file" id="photoInput" accept="image/*" hidden>
+                        <div class="upload-placeholder">
+                            <span class="upload-icon">📷</span>
+                            <p>Перетащи фото сюда или нажми</p>
+                            <span class="upload-hint">PNG, JPG, WEBP до 10 МБ</span>
+                        </div>
+                        <img id="photoPreview" class="preview-img" hidden>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-video">
+                    <label>Загрузи видео</label>
+                    <div class="upload-zone" id="videoZone">
+                        <input type="file" id="videoInput" accept="video/*" hidden>
+                        <div class="upload-placeholder">
+                            <span class="upload-icon">🎬</span>
+                            <p>Перетащи видео сюда или нажми</p>
+                            <span class="upload-hint">MP4, WEBM до 50 МБ</span>
+                        </div>
+                        <video id="videoPreview" class="preview-video" controls hidden></video>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-file">
+                    <label>Загрузи любой файл</label>
+                    <div class="upload-zone" id="fileZone">
+                        <input type="file" id="fileInput" hidden>
+                        <div class="upload-placeholder">
+                            <span class="upload-icon">📄</span>
+                            <p>Перетащи файл сюда или нажми</p>
+                            <span class="upload-hint">Любой формат</span>
+                        </div>
+                        <div id="fileInfo" class="file-info" hidden></div>
+                    </div>
+                </div>
+
+                <div class="create-options">
+                    <label class="checkbox">
+                        <input type="checkbox" id="customSlug">
+                        <span>Кастомный slug (короткое имя)</span>
+                    </label>
+                    <input type="text" id="slugInput" placeholder="my-awesome-link" class="input" hidden>
+                </div>
+
+                <button class="btn-primary btn-full" id="generateBtn">
+                    <span>✨ Создать ссылку</span>
+                </button>
+
+                <div class="result" id="result" hidden>
+                    <div class="result-header">
+                        <span class="result-badge">Готово!</span>
+                        <h3>Твоя ссылка создана</h3>
+                    </div>
+                    <div class="result-link">
+                        <input type="text" id="generatedLink" readonly class="input">
+                        <button class="btn-copy" id="copyBtn">Копировать</button>
+                    </div>
+                    <p class="result-note">Ссылка работает локально в этом браузере. Сохрани её или поделись!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how">
+        <div class="container">
+            <h2 class="section-title">Как это <span class="gradient-text">работает</span></h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Выбери тип</h3>
+                    <p>URL, фото, видео или файл</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Загрузи / вставь</h3>
+                    <p>Контент или ссылку</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Получи ссылку</h3>
+                    <p>Готово за 1 секунду</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="support" id="support">
+        <div class="container">
+            <h2 class="section-title">Поддержка <span class="gradient-text">24/7</span></h2>
+            <p class="section-desc">Мы всегда на связи. Пиши или звони — ответим быстро</p>
+            
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:support@aiweb.app">support@aiweb.app</a>
+                    <p>Ответ в течение 2 часов</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">📱</div>
+                    <h3>Телефон</h3>
+                    <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                    <p>Пн–Вс 9:00–21:00 МСК</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">💬</div>
+                    <h3>Telegram</h3>
+                    <a href="https://t.me/aiweb_support" target="_blank">@aiweb_support</a>
+                    <p>Мгновенные ответы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">AI</span>
+                    <span class="logo-text">Web</span>
+                </a>
+                <p>Премиум-генератор бесплатных ссылок.<br>Создано с ❤️ для всех.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Продукт</h4>
+                    <a href="#features">Возможности</a>
+                    <a href="#create">Создать</a>
+                    <a href="#support">Поддержка</a>
+                </div>
+                <div>
+                    <h4>Компания</h4>
+                    <a href="#">О нас</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Карьера</a>
+                </div>
+                <div>
+                    <h4>Правовая</h4>
+                    <a href="#">Политика</a>
+                    <a href="#">Условия</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 AI Web. Все права защищены. Сделано на GitHub Pages.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeAuth">×</button>
+            <h2>Вход в AI Web</h2>
+            <p class="modal-desc">Войди, чтобы сохранять свои ссылки</p>
+            <form id="authForm">
+                <input type="email" placeholder="Email" class="input" required>
+                <input type="password" placeholder="Пароль" class="input" required>
+                <button type="submit" class="btn-primary btn-full">Войти</button>
+            </form>
+            <p class="modal-switch">Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a></p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeRegister">×</button>
+            <h2>Регистрация</h2>
+            <p class="modal-desc">Создай аккаунт за 10 секунд — без проверок</p>
+            <form id="registerForm">
+                <input type="text" placeholder="Имя" class="input" required>
+                <input type="email" placeholder="Email" class="input" required>
+                <input type="password" placeholder="Пароль" class="input" required>
+                <input type="password" placeholder="Повтори пароль" class="input" required>
+                <label class="checkbox">
+                    <input type="checkbox" required>
+                    <span>Согласен с условиями</span>
+                </label>
+                <button type="submit" class="btn-primary btn-full">Создать аккаунт</button>
+            </form>
+            <p class="modal-switch">Уже есть аккаунт? <a href="#" id="switchToAuth">Войти</a></p>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
